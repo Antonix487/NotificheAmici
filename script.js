@@ -14,7 +14,7 @@ OneSignal.push(function() {
   });
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/OneSignalSDKWorker.js')
+    navigator.serviceWorker.register('/NotificheAmici/OneSignalSDKWorker.js')
         .then(function(registration) {
             console.log('Service Worker registrato con successo:', registration);
         })
