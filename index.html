@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notifiche Push</title>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js"></script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "83c48a06-08e6-47f3-bba6-980e8490aac0",
+      safari_web_id: "web.onesignal.auto.092506a7-b452-4a06-a822-c1d343884087",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 </head>
 <body>
     <h1>Benvenuto nel sistema di notifiche!</h1>
