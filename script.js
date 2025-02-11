@@ -12,3 +12,15 @@ OneSignal.push(function() {
       OneSignal.registerForPushNotifications();
     });
   });
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/OneSignalSDKWorker.js')
+        .then(function(registration) {
+            console.log('Service Worker registrato con successo:', registration);
+        })
+        .catch(function(error) {
+            console.log('Errore nella registrazione del Service Worker:', error);
+        });
+} else {
+    console.log('Service Worker non supportato dal browser.');
+}
