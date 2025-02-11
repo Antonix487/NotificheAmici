@@ -1,6 +1,6 @@
 OneSignal.push(function() {
   OneSignal.init({
-    appId: "YOUR_APP_ID", // Inserisci il tuo appId qui
+    appId: "83c48a06-08e6-47f3-bba6-980e8490aac0", // Inserisci il tuo appId qui
   });
 
   // Impostare il pulsante per consentire le notifiche
