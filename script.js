@@ -12,4 +12,3 @@ OneSignal.push(function() {
       OneSignal.registerForPushNotifications();
     });
   });
-});
