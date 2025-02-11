@@ -11,3 +11,4 @@ OneSignal.push(function() {
     OneSignal.push(function() {
       OneSignal.registerForPushNotifications();
     });
+  });
