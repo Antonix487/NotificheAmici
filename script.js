@@ -2,6 +2,7 @@ window.OneSignal = window.OneSignal || [];
 OneSignal.push(function() {
   OneSignal.init({
     appId: "83c48a06-08e6-47f3-bba6-980e8490aac0",  // Sostituisci con il tuo appId corretto
+    serviceWorkerPath: "https://antonix487.github.io/NotificheAmici/OneSignalSDKWorker.js",
   });
 });
 
